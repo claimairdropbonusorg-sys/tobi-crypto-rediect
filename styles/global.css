@@ -1,0 +1,27 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --text:#e6eef8;
+  --accent:#00bcd4;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,#07102a 0%,#07102a 60%,#061122 100%);color:var(--text)}
+.container{max-width:960px;margin:2rem auto;padding:1rem}
+header{display:flex;justify-content:space-between;align-items:center;gap:1rem;margin-bottom:1rem}
+.nav a{color:var(--accent);margin-left:0.75rem}
+.hero{background:rgba(255,255,255,0.02);padding:1rem;border-radius:8px}
+.btn{background:var(--accent);color:#000;padding:0.5rem 1rem;border-radius:6px;text-decoration:none}
+.grid{display:grid;grid-template-columns:1fr;gap:0.75rem;margin-top:1rem}
+.card{display:flex;gap:1rem;align-items:center;padding:0.75rem;background:rgba(255,255,255,0.02);border-radius:8px}
+.card img{border-radius:50%}
+.card-body h3{margin:0;font-size:1rem}
+.card-actions .btn.small{padding:0.25rem 0.6rem;font-size:0.8rem}
+.controls input{width:100%;padding:0.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06);margin-bottom:0.75rem}
+.token-detail{display:flex;gap:1rem;align-items:center}
+.token-detail img{width:64px;height:64px}
+.add-form{display:flex;flex-direction:column;gap:0.5rem;max-width:420px}
+.add-form input{padding:0.6rem;border-radius:6px;border:1px solid rgba(255,255,255,0.06)}
+.add-form button{background:var(--accent);color:#000;padding:0.6rem;border-radius:6px;border:none}
+.message{color:#9be7ff}
+
+@media(min-width:768px){.grid{grid-template-columns:1fr 1fr}}
